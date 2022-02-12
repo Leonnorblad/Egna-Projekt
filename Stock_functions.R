@@ -27,3 +27,10 @@ value_func<-function(value_before, # Värdet innan krash
     print(paste0("Vilket är ", weekdays(date_back),"en den ", day(date_back)," ", month(date_back, label=TRUE, abbr=FALSE)," ", year(date_back)))
   }
 }
+
+# Exempel på värden som kan matas in
+value_func(value_before = 10000, # 10 000 kr innan krash
+           value_now = 6000, # 60 000 kr efter krash
+           ang_stock_ret_percent=7 # Med en snittuppgång på 7% per år
+)
+
